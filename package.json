@@ -1,0 +1,46 @@
+{
+  "name": "@brendangooch/screen-object",
+  "version": "1.0.0",
+  "description": "",
+  "author": "B Gooch <brendangooch@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "prepack": "npm run build",
+    "prebuild": "npm run clean",
+    "clean": "rm -rf lib",
+    "build": "tsc"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./lib/screen-object.js"
+  },
+  "types": "./lib/screen-object.d.ts",
+  "files": [
+    "/lib",
+    "!/lib/**/*.js.map",
+    "!/lib/*.js.map"
+  ],
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendangooch/screen-object.git"
+  },
+  "homepage": "https://github.com/brendangooch/screen-object#readme",
+  "bugs": {
+    "url": "https://github.com/brendangooch/screen-object/issues",
+    "email": "brendangooch@gmail.com"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@brendangooch/canvas": "^1.0.0",
+    "@brendangooch/dynamic-objects": "^1.0.1",
+    "@brendangooch/maths": "^1.1.0",
+    "@brendangooch/utils": "^2.1.1"
+  }
+}

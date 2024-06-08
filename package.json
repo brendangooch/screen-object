@@ -16,9 +16,9 @@
     "access": "public"
   },
   "exports": {
-    ".": "./lib/screen-object.js"
+    ".": "./lib/index.js"
   },
-  "types": "./lib/screen-object.d.ts",
+  "types": "./lib/index.d.ts",
   "files": [
     "/lib",
     "!/lib/**/*.js.map",
